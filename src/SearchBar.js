@@ -23,26 +23,29 @@ export default function SearchBar() {
           let type;
           if (hit._tags.includes('story')) {
             type = 'story';
-          } else if (hit._tags.includes('comment')) {
+          } else {
             type = 'comment';
           }
           return {
-            title: hit.title,
-            url: hit.url,
+            text: type === 'story' ? hit.title : hit.comment_text,
+            url: type === 'story' ? hit.url : hit.story_url,
             date: hit.created_at,
             points: hit.points,
             type,
           };
         });
-        console.log(results);
         dispatch(newSearch({ searchTerm, results }));
+        setSearchTerm('');
+      })
+      .catch((error) => {
+        console.error('Error:', error);
       });
   }
 
   return (
-    <form onSubmit={handleSubmit}>
-      <input type='text' name='text' value={searchTerm} onChange={handleChange}></input>
-      <input type='submit' value='Search'></input>
+    <form onSubmit={handleSubmit} className='search'>
+      <input type='text' name='text' value={searchTerm} onChange={handleChange} className='search-bar'></input>
+      <input type='submit' value='Search' className='search-button'></input>
     </form>
   );
 }
