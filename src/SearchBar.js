@@ -16,9 +16,12 @@ export default function SearchBar() {
     fetch(queryString)
       .then((response) => response.json())
       .then((data) => {
+        //Throw out misc results that are not stories or comments
         let results = data.hits.filter((hit) => {
           return hit._tags.includes('story') || hit._tags.includes('comment');
         });
+
+        //For each hit, only save a few fields of relevant data
         results = data.hits.map((hit) => {
           let type;
           if (hit._tags.includes('story')) {
@@ -34,6 +37,7 @@ export default function SearchBar() {
             type,
           };
         });
+
         dispatch(newSearch({ searchTerm, results }));
         setSearchTerm('');
       })

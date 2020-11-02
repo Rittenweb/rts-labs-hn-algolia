@@ -3,7 +3,7 @@ import { useSelector } from 'react-redux';
 import { selectResults } from './searchSlice';
 
 export default function SearchResults() {
-  const results = useSelector(selectResults);
+  const results = useSelector(selectResults); //Array of objects, each of which has {type, date, url, text, points}
 
   return (
     <div className='search-results'>

@@ -59,13 +59,15 @@
 }
 
 .search-result {
+  margin: 5px;
+  padding: 10px;
+
+  display: flex;
+  justify-content: space-between;
+
   border: 2px solid black;
   color: black;
   text-decoration: none;
-  margin: 5px;
-  padding: 10px;
-  display: flex;
-  justify-content: space-between;
 }
 
 .past-searches-header {
