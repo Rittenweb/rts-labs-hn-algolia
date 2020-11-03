@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/rts-labs-hn-algolia/static/css/main.9b110e90.chunk.css",
+    "main.js": "/rts-labs-hn-algolia/static/js/main.8e4f58d2.chunk.js",
+    "main.js.map": "/rts-labs-hn-algolia/static/js/main.8e4f58d2.chunk.js.map",
+    "runtime-main.js": "/rts-labs-hn-algolia/static/js/runtime-main.9fb3c12e.js",
+    "runtime-main.js.map": "/rts-labs-hn-algolia/static/js/runtime-main.9fb3c12e.js.map",
+    "static/js/2.7f5fece8.chunk.js": "/rts-labs-hn-algolia/static/js/2.7f5fece8.chunk.js",
+    "static/js/2.7f5fece8.chunk.js.map": "/rts-labs-hn-algolia/static/js/2.7f5fece8.chunk.js.map",
+    "index.html": "/rts-labs-hn-algolia/index.html",
+    "static/css/main.9b110e90.chunk.css.map": "/rts-labs-hn-algolia/static/css/main.9b110e90.chunk.css.map",
+    "static/js/2.7f5fece8.chunk.js.LICENSE.txt": "/rts-labs-hn-algolia/static/js/2.7f5fece8.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.9fb3c12e.js",
+    "static/js/2.7f5fece8.chunk.js",
+    "static/css/main.9b110e90.chunk.css",
+    "static/js/main.8e4f58d2.chunk.js"
+  ]
+}
